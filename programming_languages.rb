@@ -5,6 +5,7 @@ def reformat_languages(languages)
     styles.each do |language, type_hash|
       final_hash[:language] = {:type => type_hash.values[0],
                           :style => [prgrm]}
+      binding.pry
       end
     end
 
