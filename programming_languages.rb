@@ -12,6 +12,7 @@ def reformat_languages(languages)
                             :style => [prgrm]}
       end
     end
+  end
 
   final_hash
 
