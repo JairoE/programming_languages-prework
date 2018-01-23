@@ -4,10 +4,10 @@ def reformat_languages(languages)
   languages.each do |prgrm, styles|
     type.each do |language, type_hash|
       final_hash[:language] = {:type => type_hash.values[0],
-                          :style => [prgrm]} 
+                          :style => [prgrm]}
       end
     end
 
   final_hash
-  
+
 end
