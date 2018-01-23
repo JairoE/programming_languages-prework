@@ -5,6 +5,9 @@ def reformat_languages(languages)
   final_hash = {}
   languages.each do |prgrm, styles|
     styles.each do |language, type_hash|
+      if final_hash.keys.include?(language)
+        final_hash[language][:style].push[prgrm]
+
       final_hash[language] = {:type => type_hash.values[0],
                           :style => [prgrm]}
 
